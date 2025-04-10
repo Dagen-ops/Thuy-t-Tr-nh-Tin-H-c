@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,26 +12,22 @@
       <!--Phần Tiêu đề trang-->
       <tr>
         <td colspan="2" align="center">
-          <font face="Times New Roman" size="10px" color="orange"
-            ><b>Kỉ yếu lớp 12A6</b>
+          <font face="Times New Roman" size="10px" color="orange">
+            <b>Kỉ yếu lớp 12A6</b>
           </font>
+          <br />
+          <p style="font-family: 'Times New Roman'; font-size: 20px; color: #333; margin-top: 10px;">
+            Chào mừng bạn đến với kỉ yếu lớp 12A6 – Nơi lưu giữ những kỷ niệm đẹp nhất của tuổi học trò!
+          </p>
         </td>
       </tr>
-      <!-- Để khi cần hình dung bố cục web      
-      <tr>
-        <td width="10%" valign="top">Phần mục</td>
-        <td>Phần Iframe</td>
-      </tr>
-      -->
-    </table>
+
     <!--Phần thân trang web -->
     <table border="1" cellspacing="0" width="10%" valign="top">
       <!--Phần mục (bảng 1)-->
       <tr>
         <td>
-          <a href="gioithieu.html" target="iframe_noidung" class="active"
-            >Trang chủ</a
-          >
+          <a href="gioithieu.html" target="iframe_noidung" class="active">Trang chủ</a>
         </td>
       </tr>
       <tr></tr>
@@ -39,11 +35,10 @@
         <td><a href="hoatdong.html" target="iframe_noidung">Hoạt động</a></td>
       </tr>
       <tr>
-        <td>
-          <a href="thanhvienlop.html" target="iframe_noidung">Thành viên lớp</a>
-        </td>
+        <td><a href="thanhvienlop.html" target="iframe_noidung">Thành viên lớp</a></td>
       </tr>
     </table>
+
     <!--Phần nội dung của mục (bảng 2)-->
     <table width="100%" height="1000px" border="0" cellspacing="0">
       <tr>
@@ -59,7 +54,21 @@
         </td>
       </tr>
     </table>
+
+    <!-- Ảnh đại diện -->
+    <div style="text-align:center; margin-top: 20px;">
+      <img 
+        src="Z6489926122073_03f2dd72d2ca2cf229ce1a9ba83e1e09.jpg" 
+        alt="Ảnh lớp"
+        style="border: 4px solid black; width: 700px;" />
+        <img 
+        src="z6489926063240_6b77fef392cbca03674943a79a4cba38.jpg" 
+        alt="Ảnh lớp"
+        style="border: 4px solid black; width: 700px;" />
+    </div>
+
     <hr />
+
     <!--Chân trang-->
     <center>
       <header>
@@ -75,23 +84,22 @@
         <font size="3px">© Copyright, Lớp 12A6 2024 - 2025</font>
       </footer>
     </center>
-    <!--java test-->
+
+    <!--Script xử lý menu active-->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         let links = document.querySelectorAll("table a");
-        let currentUrl = window.location.href;
 
         links.forEach((link) => {
           link.addEventListener("click", function () {
             links.forEach((l) => l.classList.remove("active"));
             this.classList.add("active");
           });
-
-          if (currentUrl.includes(link.getAttribute("href"))) {
-            link.classList.add("active");
-          }
         });
       });
     </script>
   </body>
 </html>
+
+       
+     
